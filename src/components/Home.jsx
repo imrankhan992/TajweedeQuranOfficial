@@ -34,12 +34,12 @@ const Home = () => {
         >
           <SwiperSlide>
             {" "}
-            <img src="/Images/Carousals/carousal1.png" alt="" />
+            <img src={import.meta.env.BASE_URL + "/Images/Carousals/carousal1.png"} alt="" />
           </SwiperSlide>
           <SwiperSlide>Slide 2</SwiperSlide>
         </Swiper>
       </div>
-      <img src="/Images/Carousals/sous-slider.png" alt="" />
+      <img src={import.meta.env.BASE_URL+"/Images/Carousals/sous-slider.png"} alt="" />
       <OurVision />
       <LearnQuran />
       <HowToEnroll />

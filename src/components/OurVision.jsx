@@ -32,7 +32,7 @@ const  OurVision = () => {
             <div className="">
               {" "}
               <img
-                src="/Images/icons/ourmission.png"
+                src={import.meta.env.BASE_URL+"/Images/icons/ourmission.png"}
                 width={250}
                 height={250}
                 alt=""
@@ -51,7 +51,7 @@ const  OurVision = () => {
             <div className=" ">
               {" "}
               <img
-                src="/Images/icons/quran.png"
+                src={import.meta.env.BASE_URL+"/Images/icons/quran.png"}
                 width={200}
                 height={200}
                 alt=""

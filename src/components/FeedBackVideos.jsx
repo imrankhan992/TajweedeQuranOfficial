@@ -28,6 +28,7 @@ const FeedbackVideos = () => {
       <div className="grid md:grid-cols-3 gap-2 ">
         {feedbackData.map((feedback) => (
         <iframe
+        key={feedback.id}
           src={`https://www.youtube.com/embed/${feedback.feedbackVideo}`}
           title="YouTube video player"
           frameBorder="0"
