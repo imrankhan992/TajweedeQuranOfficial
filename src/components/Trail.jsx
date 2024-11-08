@@ -21,6 +21,7 @@ export function Trail({ courseName }) {
     contactNumber: "",
     message: "",
     courseName: courseName,
+    email:""
   });
   const [statusMessage, setStatusMessage] = useState("");
   const [loading, setLoading] = useState(false)
@@ -69,13 +70,11 @@ export function Trail({ courseName }) {
       <DialogContent className="sm:max-w-[425px] bg-[#EEEEEE]">
         <DialogHeader>
           <DialogTitle>Book Free Tail</DialogTitle>
-          <DialogDescription>
-            Fill out the form below to book a free trial class for 1 week.
-          </DialogDescription>
+         
         </DialogHeader>
         <div className="grid gap-4 ">
           <div className="">
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-2">
               <div>
                 <label className="block text-sm font-medium !mb-2">
                   {" "}
@@ -108,6 +107,20 @@ export function Trail({ courseName }) {
                   onChange={handleChange}
                   required
                   placeholder="(+123) 456-7890"
+                  className="mt-1 p-2 border border-black rounded w-full "
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium">
+                  Email
+                </label>
+                <Input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  placeholder="Email Address"
                   className="mt-1 p-2 border border-black rounded w-full "
                 />
               </div>

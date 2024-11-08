@@ -29,14 +29,14 @@ const  OurVision = () => {
         <div className="flex items-start justify-center gap-10 flex-col">
           {/* our vision */} 
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-start">
-            <div className="">
+            <div className="w-20 md:w-56 h-20">
               {" "}
               <img
                 src={import.meta.env.BASE_URL+"/Images/icons/ourmission.png"}
                 width={250}
                 height={250}
                 alt=""
-                className="rounded-full border-2 p-2 border-[#032e3c]"
+                className="rounded-full border-2 p-2 border-[#032e3c]  "
               />
             </div>
             <div className="flex flex-col gap-2">
@@ -48,14 +48,14 @@ const  OurVision = () => {
           </div>
           {/* our mission */}
           <div className="flex items-center justify-center md:justify-start gap-4 md:flex-row flex-col text-center md:text-start">
-            <div className=" ">
+            <div className="w-20 md:w-56 h-20 ">
               {" "}
               <img
                 src={import.meta.env.BASE_URL+"/Images/icons/quran.png"}
                 width={200}
                 height={200}
                 alt=""
-                className="rounded-full border-2 p-2 border-[#032e3c]"
+                className="rounded-full border-2 p-2 border-[#032e3c] "
               />
             </div>
             <div className="flex flex-col gap-2">

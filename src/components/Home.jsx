@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 // import required modules
-import { Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import OurVision from "./OurVision";
 import LearnQuran from "./LearnQuran.jsx";
 import ServiceOffer from "./ServiceOffer";
@@ -16,10 +16,15 @@ import Footer from "./Footer";
 import HowToEnroll from "./HowToEnroll";
 import FeedbackVideos from "./FeedBackVideos";
 import { Trail } from "./Trail";
+import WhatsAppButton from "./WhatsAppButton";
+import ChatIcon from "./ChatIcon";
+import ReasonPeopleChoseUs from "./ReasonPeopleChoseUs";
 
 const Home = () => {
   return (
     <div className="relative w-full" id="home">
+      <WhatsAppButton/>
+      <ChatIcon/>
       <Header />
 
       <div>
@@ -29,14 +34,24 @@ const Home = () => {
           pagination={true}
           mousewheel={true}
           keyboard={true}
-          autoplay={true}
-          modules={[Navigation, Pagination]}
+          autoplay={
+            {delay: 5000,
+            disableOnInteraction: false,}
+          }
+          modules={[Navigation, Pagination,Autoplay]}
         >
           <SwiperSlide>
             {" "}
-            <img src={import.meta.env.BASE_URL + "/Images/Carousals/carousal1.png"} alt="" />
+            <img src={import.meta.env.BASE_URL + "/Images/Carousals/heropage.png"} alt="" />
           </SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
+          <SwiperSlide>
+            {" "}
+            <img src={import.meta.env.BASE_URL + "/Images/Carousals/heropage1.png"} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            {" "}
+            <img src={import.meta.env.BASE_URL + "/Images/Carousals/heropage2.jpg"} alt="" />
+          </SwiperSlide>
         </Swiper>
       </div>
       <img src={import.meta.env.BASE_URL+"/Images/Carousals/sous-slider.png"} alt="" />
@@ -44,6 +59,7 @@ const Home = () => {
       <LearnQuran />
       <HowToEnroll />
       <ServiceOffer />
+      <ReasonPeopleChoseUs/>
       <FeedbackVideos />
       <StudentsReviews />
       
