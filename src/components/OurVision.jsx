@@ -10,6 +10,7 @@ const  OurVision = () => {
           width={80}
           height={80}
           alt=""
+          loading="lazy"
         />
         <div className="text-center">
           <h3 className="text-xl md:text-2xl"> Welcome to the Islamic center</h3>
@@ -37,6 +38,7 @@ const  OurVision = () => {
                 height={250}
                 alt=""
                 className="rounded-full border-2 p-2 border-[#032e3c]  "
+                loading="lazy"
               />
             </div>
             <div className="flex flex-col gap-2">
@@ -56,6 +58,7 @@ const  OurVision = () => {
                 height={200}
                 alt=""
                 className="rounded-full border-2 p-2 border-[#032e3c] "
+                loading="lazy"
               />
             </div>
             <div className="flex flex-col gap-2">

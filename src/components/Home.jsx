@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "./Header";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import {HashLoader} from "react-spinners"
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -22,14 +22,28 @@ import ReasonPeopleChoseUs from "./ReasonPeopleChoseUs";
 import ContactUs from "./ContactUs";
 
 const Home = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Listen for when the page has fully loaded
+    window.addEventListener('load', () => {
+      setLoading(false);
+    });
+    return () => window.removeEventListener('load', () => setLoading(false));
+  }, []);
   return (
+   <>
+   {
+    loading ?(<div className="max-h-screen min-h-screen w-full flex items-center justify-center flex-col"><HashLoader color="#014B5E"/> Loading...</div>):(<>
+    
     <div className="relative w-full" id="home">
       <WhatsAppButton/>
       <ChatIcon/>
       <Header />
 
-      <div>
-        <Swiper
+     
+       <div className="w-full h-full relative mb-16">
+       <Swiper
           cssMode={true}
           navigation={true}
           pagination={true}
@@ -43,19 +57,21 @@ const Home = () => {
         >
           <SwiperSlide>
             {" "}
-            <img src={import.meta.env.BASE_URL + "/Images/Carousals/heropage.png"} alt="" />
+            <img loading="lazy" src={import.meta.env.BASE_URL + "/Images/Carousals/heropage.png"} alt="" />
           </SwiperSlide>
           <SwiperSlide>
             {" "}
-            <img src={import.meta.env.BASE_URL + "/Images/Carousals/heropage1.png"} alt="" />
+            <img loading="lazy" src={import.meta.env.BASE_URL + "/Images/Carousals/heropage1.png"} alt="" />
           </SwiperSlide>
           <SwiperSlide>
             {" "}
-            <img src={import.meta.env.BASE_URL + "/Images/Carousals/heropage2.jpg"} alt="" />
+            <img loading="lazy"  src={import.meta.env.BASE_URL + "/Images/Carousals/heropage2.jpg"} alt="" />
           </SwiperSlide>
         </Swiper>
+     
       </div>
-      <img src={import.meta.env.BASE_URL+"/Images/Carousals/sous-slider.png"} alt="" />
+      {/* <img loading="lazy" src={import.meta.env.BASE_URL+"/Images/Carousals/sous-slider.png"}  alt="" /> */}
+      
       <OurVision />
       <LearnQuran />
       <HowToEnroll />
@@ -66,6 +82,9 @@ const Home = () => {
       <ContactUs/>
       <Footer />
     </div>
+    </>)
+   }
+   </>
   );
 };
 

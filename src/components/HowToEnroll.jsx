@@ -10,6 +10,7 @@ const HowToEnroll = () => {
           width={80}
           height={80}
           alt=""
+          loading="lazy"
         />
         <div className="text-center">
         
