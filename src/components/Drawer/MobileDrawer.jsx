@@ -62,8 +62,10 @@ const MobileDrawer = () => {
           >
             Courses
           </li>
-          <li className="hover:underline cursor-pointer">Contact Us</li>
+         
           <li  className="hover:underline cursor-pointer" onClick={() => {setOpen(false);scrollToSection("aboutUs")}}>About us</li>
+          <li  className="hover:underline cursor-pointer" onClick={() => {setOpen(false);scrollToSection("contactUs")}}>Contact us</li>
+          <li  className="hover:underline cursor-pointer" onClick={() => {setOpen(false);scrollToSection("FAQ")}}>FAQ</li>
           <li className="bg-[#C28336] p-3 text-sm rounded-full hover:underline cursor-pointer"  onClick={() =>{setOpen(false); scrollToSection("courses")}}>
             Request For Demo Class
           </li>

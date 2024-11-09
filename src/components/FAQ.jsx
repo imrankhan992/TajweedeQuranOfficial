@@ -8,7 +8,7 @@ import {
 import faqData from './FaqData'
 const FAQ = () => {
   return (
-    <Accordion type="single" collapsible className="w-full mt-8">
+    <Accordion type="single" collapsible className="w-full mt-8" >
    
    {
     faqData.map((faq)=>{

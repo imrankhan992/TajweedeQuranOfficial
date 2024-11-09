@@ -19,6 +19,7 @@ import { Trail } from "./Trail";
 import WhatsAppButton from "./WhatsAppButton";
 import ChatIcon from "./ChatIcon";
 import ReasonPeopleChoseUs from "./ReasonPeopleChoseUs";
+import ContactUs from "./ContactUs";
 
 const Home = () => {
   return (
@@ -62,7 +63,7 @@ const Home = () => {
       <ReasonPeopleChoseUs/>
       <FeedbackVideos />
       <StudentsReviews />
-      
+      <ContactUs/>
       <Footer />
     </div>
   );

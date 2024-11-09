@@ -132,12 +132,12 @@ export function Trail({ courseName }) {
                   onChange={handleChange}
                   required
                   className="mt-1 p-2  rounded w-full bg-transparent border border-black h-32"
-                  placeholder="write your detail message here for the trial class and email address if possible."
+                  placeholder="write your detail message here for the trial class."
                 />
               </div>
               <button
                 type="submit"
-                className="bg-blue-500 text-white p-2 rounded mt-2 hover:bg-blue-600 w-full"
+                className="bg-[#014B5E] text-white p-2 rounded mt-2 hover:bg-blue-600 w-full"
               >
                {loading?"Loading...":"Submit"}
               </button>

@@ -3,7 +3,7 @@ import FAQ from './FAQ'
 
 const HowToEnroll = () => {
   return (
-    <div className='pt-16'>
+    <div className='pt-16' id='FAQ'>
        <div className="flex items-center justify-center flex-col gap-2 ">
         <img
           src={import.meta.env.BASE_URL+"/Images/icons/important.png"}

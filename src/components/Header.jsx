@@ -23,6 +23,7 @@ const Header = () => {
           </li>
           
           <li  className="hover:underline cursor-pointer" onClick={() => scrollToSection("aboutUs")}>About us</li>
+          <li  className="hover:underline cursor-pointer" onClick={() => scrollToSection("contactUs")}>Contact us</li>
           <li  className="hover:underline cursor-pointer" onClick={() => scrollToSection("FAQ")}>FAQ</li>
           <li className="bg-[#C28336] p-3 rounded-full hover:underline cursor-pointer"  onClick={() => scrollToSection("courses")}>
             Request For Demo Class
