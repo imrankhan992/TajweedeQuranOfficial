@@ -57,15 +57,15 @@ const Home = () => {
         >
           <SwiperSlide>
             {" "}
-            <img loading="lazy" src={ "/Images/Carousals/heropage.png"} alt="" />
+            <img loading="lazy" src={import.meta.env.BASE_URL+ "/Images/Carousals/heropage.png"} alt="" />
           </SwiperSlide>
           <SwiperSlide>
             {" "}
-            <img loading="lazy" src={ "/Images/Carousals/heropage1.png"} alt="" />
+            <img loading="lazy" src={import.meta.env.BASE_URL+ "/Images/Carousals/heropage1.png"} alt="" />
           </SwiperSlide>
           <SwiperSlide>
             {" "}
-            <img loading="lazy"  src={ "/Images/Carousals/heropage2.jpg"} alt="" />
+            <img loading="lazy"  src={import.meta.env.BASE_URL+ "/Images/Carousals/heropage2.jpg"} alt="" />
           </SwiperSlide>
         </Swiper>
      
