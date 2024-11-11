@@ -41,10 +41,10 @@ const StudentsReviews = () => {
             <SwiperSlide key={item?.id}>
               <div className="group p-7  items-center flex justify-between md:w-[40%]  flex-col gap-3   ">
                 <div className="w-full flex items-center flex-col  ">
-                  <img loading="lazy" src={import.meta.env.BASE_URL+"/"+item?.image} alt="" className="!h-40 !w-40" />
+                  <img loading="lazy" src={item?.image} alt="" className="!h-40 !w-40" />
                   <div className="flex items-center justify-center gap-2">
                     <h1 className=" font-semibold text-xl">{item?.name}</h1>{" "}
-                    <img loading="lazy" src={import.meta.env.BASE_URL+"/"+item?.Flag} className="!h-10 !w-10" alt="" />
+                    <img loading="lazy" src={item?.Flag} className="!h-10 !w-10" alt="" />
                   </div>
                   <p className="text-sm underline text-center text-[#032E3C] font-bold py-2">
                     {item?.country}

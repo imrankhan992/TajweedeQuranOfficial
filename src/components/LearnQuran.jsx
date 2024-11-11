@@ -51,7 +51,7 @@ const LearnQuran = () => {
                 return (
                     <SwiperSlide key={item.id}>
                         <div className=" p-4  shadow-lg min-h-[430px]  !rounded-3xl border-2 border-[#032E3C] cursor-pointer hover:bg-[#C28336] active:scale-95 duration-150 active:transition-transform  hover:duration-1000 hover:transition-colors">
-                            <img loading="lazy" src={import.meta.env.BASE_URL+"/"+item?.image} width={60} height={60} alt="" />
+                            <img loading="lazy" src={item?.image} width={60} height={60} alt="" />
                             <h1 className=" font-semibold text-xl">{item.title}</h1>
                             <p className="text-sm underline text-center text-[#032E3C]">{item.subtitle}</p>
                             <p className="text-sm  text-center">{item.description}</p>

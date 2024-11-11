@@ -25,12 +25,10 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Listen for when the page has fully loaded
-    window.addEventListener('load', () => {
+    setTimeout(() => {
       setLoading(false);
-    });
-    return () => window.removeEventListener('load', () => setLoading(false));
-  }, []);
+    }, 5000);
+  }, [loading]);
   return (
    <>
    {
@@ -57,15 +55,15 @@ const Home = () => {
         >
           <SwiperSlide>
             {" "}
-            <img loading="lazy" src={import.meta.env.BASE_URL+ "/Images/Carousals/heropage.png"} alt="" />
+            <img loading="lazy" src={ "/Images/Carousals/heropage.png"} alt="" />
           </SwiperSlide>
           <SwiperSlide>
             {" "}
-            <img loading="lazy" src={import.meta.env.BASE_URL+ "/Images/Carousals/heropage1.png"} alt="" />
+            <img loading="lazy" src={ "/Images/Carousals/heropage1.png"} alt="" />
           </SwiperSlide>
           <SwiperSlide>
             {" "}
-            <img loading="lazy"  src={import.meta.env.BASE_URL+ "/Images/Carousals/heropage2.jpg"} alt="" />
+            <img loading="lazy"  src={ "/Images/Carousals/heropage2.jpg"} alt="" />
           </SwiperSlide>
         </Swiper>
      
@@ -89,3 +87,14 @@ const Home = () => {
 };
 
 export default Home;
+
+
+
+
+
+
+
+
+
+
+
