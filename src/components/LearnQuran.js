@@ -23,10 +23,10 @@ const learnQuran = [
     {
         id: 4,
         
-        title:"Quran Translation",
+        title:"Tajweed Course",
         image:"/Images/quranTranslation.png",
-        subtitle:"Learn Quran Translation (Course)",
-        description:"Learn Quran Translation course is designed for those who want to understand the Quran. It is a step by step guide for understanding the Quran.",
+        subtitle:"Quran Tajweed (Course)",
+        description:"Learn Quran Tajweed course is designed for those who want to learn Quran Tajweed. It is a step by step guide for learning Quran Tajweed.",
     },
     {
         id: 5,
@@ -38,9 +38,9 @@ const learnQuran = [
     {
         id: 6,
         image:"/Images/reciatation.png",
-        title:"Quran Recitation",
-        subtitle:"Learn Quran Recitation (Course)",
-        description:"Learn Quran Recitation course is designed for those who want to recite the Quran with proper pronunciation. It is a step by step guide for reciting the Quran.",
+        title:"Hadis Course",
+        subtitle:"Learn Hadis (Course)",
+        description:"Learn Hadis course is designed for those who want to learn Hadis. It is a step by step guide for learning Hadis.",
     },
     {
         id:7,

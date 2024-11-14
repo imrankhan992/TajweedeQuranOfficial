@@ -3,7 +3,7 @@ import reason from './ReasonToChoseUs'
 
 const ReasonPeopleChoseUs = () => {
   return (
-    <div className='px-6 md:px-16 relative pb-16'>
+    <div className='px-6 md:px-16 relative pb-16' data-aos="fade-up">
       
         <h1 className='text-3xl md:text-4xl font-bold pb-6'>{reason.length} Reasons For People Choosing Us</h1>
       <div className='flex flex-wrap gap-2 items-center justify-center'>

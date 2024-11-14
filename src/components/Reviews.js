@@ -4,7 +4,7 @@ const reviews = [
         name: "Hasan",
         country: "USA",
         Flag:`/Images/icons/usa.png`,
-        image: `/Images/quranTranslation.png`,
+        image: `/Images/Students/hasan.jpeg`,
         review: "I have been learning Quran from this platform for a few months now and I am very happy with the progress I have made. The teachers are very professional and helpful. I would recommend this platform to anyone who wants to learn Quran online.",
     },
     
@@ -14,7 +14,7 @@ const reviews = [
         country: "UK",
         
         Flag:`/Images/icons/uk.png`,
-        image: `/Images/quranTranslation.png`,
+        image: `/Images/Students/zeeshan.jpeg`,
         review: "I have been learning Quran from this platform for a few months now and I am very happy with the progress I have made. The teachers are very professional and helpful. I would recommend this platform to anyone who wants to learn Quran online.",
     },
     {
@@ -22,7 +22,7 @@ const reviews = [
         name:"Jameela",
         country:"Canada",
         Flag:`/Images/icons/canada.svg`,
-        image: `/Images/quranTranslation.png`,
+        image: `/Images/Students/jameela.jpeg`,
         review: "I have been learning Quran from this platform for a few months now and I am very happy with the progress I have made. The teachers are very professional and helpful. I would recommend this platform to anyone who wants to learn Quran online.",
     }
     

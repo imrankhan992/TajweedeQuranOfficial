@@ -41,7 +41,7 @@ const StudentsReviews = () => {
             <SwiperSlide key={item?.id}>
               <div className="group p-7  items-center flex justify-between md:w-[40%]  flex-col gap-3   ">
                 <div className="w-full flex items-center flex-col  ">
-                  <img loading="lazy" src={item?.image} alt="" className="!h-40 !w-40" />
+                  <img loading="lazy" src={item?.image} alt="" className="!h-40 !w-40 rounded-full" />
                   <div className="flex items-center justify-center gap-2">
                     <h1 className=" font-semibold text-xl">{item?.name}</h1>{" "}
                     <img loading="lazy" src={item?.Flag} className="!h-10 !w-10" alt="" />

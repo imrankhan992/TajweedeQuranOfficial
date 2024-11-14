@@ -20,6 +20,9 @@ import WhatsAppButton from "./WhatsAppButton";
 import ChatIcon from "./ChatIcon";
 import ReasonPeopleChoseUs from "./ReasonPeopleChoseUs";
 import ContactUs from "./ContactUs";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -29,6 +32,12 @@ const Home = () => {
       setLoading(false);
     }, 5000);
   }, [loading]);
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in ms
+      once: true, // Whether animation happens only once
+    });
+  }, []);
   return (
    <>
    {

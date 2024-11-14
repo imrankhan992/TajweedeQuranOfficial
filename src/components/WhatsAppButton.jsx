@@ -1,7 +1,7 @@
 import React from "react";
 
 const WhatsAppButton = () => {
-  const phoneNumber = "+923430262044"; // Replace with the recipient's phone number
+  const phoneNumber = "+923434207288"; // Replace with the recipient's phone number
   const message = encodeURIComponent(
     "Hello! I'd like to know more about your services."
   );
