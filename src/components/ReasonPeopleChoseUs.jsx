@@ -9,7 +9,7 @@ const ReasonPeopleChoseUs = () => {
       <div className='flex flex-wrap gap-2 items-center justify-center'>
       {reason.map((reason)=>{
         return(
-          <div className='flex flex-col rounded-lg text-white items-center justify-center text-center p-4 w-full md:w-52 min-h-64 max-h-64 bg-[#014B5E] gap-2'>
+          <div className='flex flex-col !rounded-2xl text-white items-center justify-center text-center p-4 w-full md:w-52 min-h-64 max-h-64 bg-[#014B5E] gap-2'>
             <img loading="lazy" src={reason.icon} alt="" className='h-20 w-20'/>
             <h1 className='text-xl  font-semibold'>{reason.title}</h1>
             <p>{reason.description}</p>
